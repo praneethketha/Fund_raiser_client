@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+.error_page {
+    background: var(--background_color);
+    color: var(--primary_color);
+    min-height: calc(100vh - 3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error_img {
+    position: relative;
+    background-image: url("./../images/error_gif.gif");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.error_page h1 {
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+.error_info {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.error_info b {
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.error_info p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.error_info a {
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.25rem;
+    transition: all 250ms ease-in-out;
+}
+
+.error_info a:hover {
+    background: rgba(0, 0, 0, 0.7);
+}

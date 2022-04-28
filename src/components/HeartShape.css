@@ -1,0 +1,363 @@
+.love {
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.heart {
+    fill: #AABBC2;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.active .heart {
+    fill: #FF4D70;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: heart 1s cubic-bezier(0.5, 0.1, 0.7, 0.8) 0.3s forwards;
+    animation: heart 1s cubic-bezier(0.5, 0.1, 0.7, 0.8) 0.3s forwards;
+}
+
+
+.drop {
+    background: #FF99AD;
+    width: 0px;
+    height: 0px;
+    margin-top: 20px;
+    position: absolute;
+    left: 7px;
+    top: -13px;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.active .drop {
+    background: #689CD9;
+    -webkit-transition: all 0.3s cubic-bezier(0.5, 0, 1, 1) 0.1s;
+    transition: all 0.3s cubic-bezier(0.5, 0, 1, 1) 0.1s;
+    -webkit-animation: drop 0.3s linear 0.1s forwards;
+    animation: drop 0.3s linear 0.1s forwards;
+}
+
+.drop:before {
+    content: "";
+    display: block;
+    background: #8CE8C3;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border-radius: 50%;
+}
+
+.active .drop:before {
+    -webkit-animation: drop 0.3s linear 0.2s forwards;
+    animation: drop 0.3s linear 0.2s forwards;
+}
+
+.drop:nth-child(1) {
+    top: -15px;
+    left: 7px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.drop:nth-child(2) {
+    top: -15x;
+    left: 10px;
+    -webkit-transform: rotate(96deg);
+    transform: rotate(96deg);
+}
+
+.drop:nth-child(3) {
+    top: -10px;
+    left: 10px;
+    -webkit-transform: rotate(147deg);
+    transform: rotate(147deg);
+}
+
+.drop:nth-child(4) {
+    top: -8px;
+    left: 8px;
+    -webkit-transform: rotate(198deg);
+    transform: rotate(198deg);
+}
+
+.drop:nth-child(5) {
+    top: -10px;
+    left: 5px;
+    -webkit-transform: rotate(249deg);
+    transform: rotate(249deg);
+}
+
+.drop:nth-child(6) {
+    top: -12px;
+    left: 5px;
+    -webkit-transform: rotate(300deg);
+    transform: rotate(300deg);
+}
+
+.drop:nth-child(7) {
+    top: -13px;
+    left: 5px;
+    -webkit-transform: rotate(351deg);
+    transform: rotate(351deg);
+}
+
+.active .drop:nth-child(1) {
+    top: -60px;
+    left: 15px;
+    -webkit-transform: rotate(-115deg);
+    transform: rotate(-115deg);
+}
+
+.active .drop:nth-child(2) {
+    top: -35px;
+    left: 50px;
+    -webkit-transform: rotate(-59deg);
+    transform: rotate(-59deg);
+}
+
+.active .drop:nth-child(3) {
+    top: 10px;
+    left: 50px;
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+
+.active .drop:nth-child(4) {
+    top: 35px;
+    left: 5px;
+    -webkit-transform: rotate(47deg);
+    transform: rotate(47deg);
+}
+
+.active .drop:nth-child(5) {
+    left: -35px;
+    top: 15px;
+    -webkit-transform: rotate(98deg);
+    transform: rotate(98deg);
+}
+
+.active .drop:nth-child(6) {
+    top: -20px;
+    left: -40px;
+    -webkit-transform: rotate(149deg);
+    transform: rotate(149deg);
+}
+
+.active .drop:nth-child(7) {
+    top: -50px;
+    left: -25px;
+    -webkit-transform: rotate(200deg);
+    transform: rotate(200deg);
+}
+
+/* ANIMATIONS */
+
+@-webkit-keyframes beat {
+    0% {
+        transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    80% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes heart {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    15% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    20% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    30% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    70% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    80% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    90% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes heart {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    15% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    20% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    30% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    70% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    80% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    90% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+
+@-webkit-keyframes drop {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    10% {
+        width: 5px;
+        height: 5px;
+    }
+
+    90% {
+        width: 5px;
+        height: 5px;
+    }
+
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@keyframes drop {
+    0% {
+        width: 1px;
+        height: 1px;
+    }
+
+    10% {
+        width: 0px;
+        height: 0px;
+    }
+
+    90% {
+        width: 5px;
+        height: 5px;
+    }
+
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+}

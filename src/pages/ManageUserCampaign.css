@@ -1,0 +1,262 @@
+.user_portion {
+    width: 75vW;
+    margin: 0 auto;
+    padding: 6rem 0 3rem 0;
+    text-align: left;
+}
+
+.user_portion>h3 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.user_portion>h3>span {
+    color: rgb(47, 188, 47);
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(47, 188, 47, 0.16);
+    border: 1px solid var(--alpha_016_shade_color);
+    border-radius: 0.375rem;
+}
+
+.user_campaigns_portion {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid var(--signup_page_border);
+    padding: 0 1rem;
+    box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.3);
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+.user_campaigns_portion::-webkit-scrollbar {
+    width: 6px;
+}
+
+.user_campaigns_portion::-webkit-scrollbar-thumb {
+    background: var(--primary_color);
+}
+
+.user_campaign_created::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.single_user_campaign {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    background: var(--background_color);
+    border: 1px solid #cdcdcd;
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+}
+
+.user_campaign_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.user_campaign_right {
+    display: grid;
+    grid-template-columns: 200px 100px 100px;
+    align-items: center;
+}
+
+
+.user_campaign_name {
+    text-align: left;
+    /* color: #333; */
+    color: var(--primary_color);
+    text-transform: uppercase;
+}
+
+.user_campaign_created {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.user_campaign_created p {
+    color: #999;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+.user_campaign_created span {
+    color: var(--primary_color);
+    font-weight: 600;
+    margin: 0 1rem 0 0.1rem;
+    text-transform: capitalize;
+}
+
+.user_campaign_state {
+    color: #999;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.user_campaign_state h3 {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.user_campaign_state p {
+    color: var(--primary_color);
+    font-weight: 600;
+}
+
+.user_campaign_icon svg {
+    transform: rotate(-20deg);
+    font-size: 20px;
+}
+
+.user_campaign_more {
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.delete_box {
+    background: rgba(187, 37, 37, 0.08) !important;
+    color: rgb(187, 37, 37);
+}
+
+.delete_box:hover {
+    background: rgba(187, 37, 37, 0.16) !important;
+}
+
+.user_campaigns_form {
+    padding: 0 1rem;
+    transform-origin: top;
+}
+
+
+.user_campaigns_form h4 {
+    font-size: 0.9rem;
+    color: var(--primary_color);
+    border-bottom: 1px solid var(--primary_color);
+}
+
+.flex_fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex_start {
+    justify-content: flex-start;
+    gap: 7rem;
+}
+
+.user_campiagn_images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: max-content;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.single_user_campaign_img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.single_user_campaign_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+
+.flex_fields>article>h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.user_cover_image_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    background: var(--primary_color);
+    font-size: 18px;
+    color: var(--background_color);
+    cursor: pointer;
+}
+
+.grid_campaign {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.flex_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 1rem auto;
+}
+
+.flex_btn button {
+    width: 10vw;
+}
+
+.users_right {
+    grid-template-columns: 200px 100px 50px;
+}
+
+.inactive_user {
+    color: rgb(187, 37, 37) !important;
+}
+
+.active_user {
+    color: #2fbc2f !important;
+}
+
+.manage_users_buttons {
+    padding: 0 1rem;
+}
+
+.btn_user {
+    font-size: 0.8rem !important;
+    margin: 0 0 0 1rem;
+}
+
+.donations_right {
+    grid-template-columns: 250px 150px 100px;
+}
+
+.filter_buttons_donations {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.header_box.active,
+.filter_buttons_donations article:hover {
+    background: rgba(47, 188, 47, 0.16);
+    color: rgb(47, 188, 47);
+}
+
+.by_campaign_right {
+    grid-template-columns: 200px 150px 100px;
+}

@@ -1,0 +1,42 @@
+.alert {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.alert_modal {
+    width: max-content;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-size: 1.2rem;
+    position: relative;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f44336;
+}
+
+.alert_modal button {
+    padding: 0.25rem 1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #f44336;
+    font-size: 1.2rem;
+    margin: 1rem auto 0.5rem auto;
+    background: #fff;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+}

@@ -1,0 +1,142 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--background_color);
+    box-shadow: var(--box-shadow_header);
+    color: var(--primary_color);
+    z-index: 997;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85vw;
+    margin: 0 auto;
+    height: 4.5rem;
+    position: relative;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-transform: capitalize;
+}
+
+.burger_menu {
+    font-size: 22px;
+}
+
+.header_icon {
+    font-size: 20px;
+    padding-right: 7px;
+}
+
+.right .singup_links {
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--primary_color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.link_hover:hover {
+    background: var(--alpha_16_shade_color);
+}
+
+#logo {
+    height: 36px;
+}
+
+.header_img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--background_color);
+}
+
+.left h2 {
+    display: flex;
+    justify-content: baseline;
+    gap: 5px;
+}
+
+.open_menu {
+    background: var(--background_color);
+    box-shadow: var(--box-shadow_header);
+    position: absolute;
+    top: 4.7rem;
+    right: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    transform-origin: top right;
+    transition: all 350ms ease-in-out;
+}
+
+.open_menu.close_menu {
+    transform: scale(0);
+}
+
+.open_menu .menu_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    color: var(--primary_color);
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    list-style: none;
+    cursor: pointer;
+    height: 20px;
+    margin: 0.25rem 0;
+    transition: all 250ms ease-in-out;
+}
+
+.open_menu .menu_item:hover {
+    background-color: var(--alpha_16_shade_color);
+}
+
+.header_box {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--alpha_08_shade_color);
+    border: 1px solid var(--alpha_016_shade_color);
+    border-radius: 0.375rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.header_box:hover {
+    background: var(--alpha_16_shade_color);
+}
+
+.logo_left {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}

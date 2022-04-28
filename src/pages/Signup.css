@@ -1,0 +1,134 @@
+.signUpPage {
+  margin: auto;
+  width: 30vw;
+  border: 1px solid var(--signup_page_border);
+  padding: 2rem 1rem;
+  box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.signup_title h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.form2 {
+  margin: 0 auto;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.form2 .sign_input {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.form2 input,
+.form2 textarea {
+  color: var(--primary_color);
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.form2 label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 500ms;
+  text-transform: capitalize;
+}
+
+.form2 input:focus+label,
+.form2 input:not(:placeholder-shown)+label,
+.form2 textarea:focus+label,
+.form2 textarea:not(:placeholder-shown)+label {
+  top: -5px;
+  color: #3ca73a;
+  font-size: 14px;
+}
+
+.form2 input::placeholder,
+.form2 textarea::placeholder {
+  color: transparent;
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+}
+
+.required {
+  position: relative;
+}
+
+.required::after {
+  content: "*";
+  position: absolute;
+  top: 3%;
+  right: -15px;
+  color: #b90000;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: none !important;
+}
+
+.signup_content {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.signup_check {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot_password {
+  text-decoration: none;
+  color: #0029FF !important;
+  font-weight: bold !important;
+  border-bottom: 1px solid #0029FF;
+  cursor: pointer;
+}
+
+.login_sign {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #3ca73a !important;
+  font-weight: bold !important;
+  border-bottom: 1px solid #3ca73a;
+  width: max-content;
+  cursor: pointer;
+}
+
+.signup_check p {
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #808080;
+}
+
+.login_check {
+  margin-top: 0 !important;
+  margin-bottom: 2rem;
+}

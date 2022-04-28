@@ -1,0 +1,116 @@
+.donate,
+.profile {
+  background: var(--background_color);
+  color: var(--primary_color);
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.page_name {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: -100%;
+  left: 0;
+  background: var(--background_color);
+  padding-right: 5px;
+  text-transform: uppercase;
+}
+
+.padding_right {
+  padding-right: 4px;
+}
+
+.page_title {
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #979797;
+}
+
+.form1 {
+  margin: 2rem 0;
+  width: 50%;
+}
+
+.single_field label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.single_field {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: baseline;
+  margin: 1rem 0;
+}
+
+.error_field {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: baseline;
+}
+
+.single_field input,
+.single_field textarea {
+  color: var(--primary_color);
+  outline: none;
+  background: transparent;
+  padding: 0.5rem;
+  border: 1px solid #bcbcbc;
+  width: 300px;
+  border-radius: 3px;
+}
+
+input[name="campaign_name"],
+input[name="processig_fee"] {
+  pointer-events: none;
+}
+
+.portion {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn_donate {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  background-color: black;
+  border-radius: 3px;
+  color: #a1eca0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  width: max-content;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.btn_donate:hover {
+  background-color: #a1eca0 !important;
+  color: #000;
+}
+
+.read_more {
+  color: #0029ff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form_error {
+  color: #e22828;
+  font-size: 13px;
+  margin-top: -1rem;
+}
+
+.log_error {
+  margin-bottom: 1rem;
+  text-align: left;
+}

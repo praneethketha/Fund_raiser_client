@@ -1,0 +1,39 @@
+footer {
+    box-shadow: 0 -2px 3px #3CA73A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--background_color);
+    color: var(--primary_color);
+    height: 2rem;
+}
+
+footer h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #808080;
+}
+
+footer span {
+    color: #3CA73A;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.logo_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}

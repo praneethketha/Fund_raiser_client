@@ -1,0 +1,221 @@
+.details_portion {
+    width: 70vw !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.campaign_heading {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.campaign_heading img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.campaign_heading::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(135deg, rgb(28, 96, 89), #004c27);
+    opacity: 0.7;
+}
+
+.campaign_heading .absolute_heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 400;
+    z-index: 93;
+}
+
+.campaign_heading h1 {
+    font-size: 4rem;
+}
+
+.campaign_heading p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.campaign_about {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); */
+}
+
+.campaign_about article {
+    text-align: left;
+    padding: 1rem 4rem;
+}
+
+.campaign_about article div {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    font-size: 1rem;
+}
+
+.campaign_about article div h4 {
+    text-transform: uppercase;
+    color: #5d5d5d;
+    font-size: 0.9rem;
+}
+
+.campaign_images_section h3,
+.donate_thing h3,
+.campaign_about article h3,
+.campaign_detail h3 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #3CA73A;
+    padding-bottom: 1rem;
+}
+
+.campaign_about article p {
+    text-transform: capitalize;
+}
+
+.campaign_detail {
+    padding: 3rem;
+    text-align: left;
+}
+
+.campaign_detail p {
+    margin-top: 1rem;
+    text-align: justify;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.campaign_donate {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
+.donate_thing {
+    width: 60%;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.donate_thing h3 {
+    padding: 0;
+}
+
+.donate_thing img {
+    height: 30px;
+}
+
+.donate_button {
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    background-color: #3CA73A;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-radius: 1rem;
+    transition: all 450ms ease-in-out;
+}
+
+.donate_button:hover {
+    background-color: #3ca73a8f;
+    color: #3CA73A;
+}
+
+.mapboxgl-ctrl-attrib {
+    display: none;
+}
+
+.marker {
+    background-image: url('./../images/pin.png');
+    background-size: cover;
+    width: 32px;
+    height: 40px;
+    cursor: pointer;
+}
+
+a.mapboxgl-ctrl-logo {
+    display: none !important;
+}
+
+
+.back_arrow {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 93;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.back_arrow {
+    top: 5%;
+    left: 2%;
+}
+
+
+.back_arrow:hover {
+    color: #ffff;
+}
+
+.map_container {
+    width: 70vw;
+    height: 300px;
+    overflow: hidden;
+}
+
+.map_popup {
+    color: #000;
+}
+
+.campaign_images_section {
+    margin-bottom: 1rem;
+}
+
+.campaign_images_section h3 {
+    font-size: 2rem !important;
+    padding: 0;
+}
+
+.campaign_images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.25rem;
+    padding: 1rem;
+}
+
+.single_campaign_image {
+    height: 250px;
+}
+
+.single_campaign_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+}

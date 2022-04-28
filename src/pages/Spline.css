@@ -1,0 +1,39 @@
+.home_section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home_section h1 {
+    font-size: 3rem;
+}
+
+.home_section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home_section p {
+    font-size: 1rem;
+    color: #a7a7a7;
+    letter-spacing: 1px;
+}
+
+.home_section button {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #00ffee;
+    margin: 1rem 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.home_page {
+    position: relative;
+    overflow-x: hidden;
+    background: linear-gradient(80deg, #00302c, #001a17);
+}

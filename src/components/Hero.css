@@ -1,0 +1,84 @@
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.hero::before {
+    content: "";
+    background: url(./../images/home_image.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    gap: 1rem;
+    width: 100%;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.help,
+.cause {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.help {
+    text-align: right;
+    background-color: #A1ECA0;
+    color: black;
+}
+
+.cause {
+    text-align: left;
+    background-color: black;
+    color: #A1ECA0;
+}
+
+.paragraph {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.buttons_home {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
+.buttons_home .hero_btns {
+    padding: 1.5rem 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: black;
+    border: none;
+    outline: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.donate_symbol {
+    margin-right: 5px;
+}
