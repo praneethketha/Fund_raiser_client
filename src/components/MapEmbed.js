@@ -20,6 +20,7 @@ const MapEmbed = ({ latitude, longitude, address }) => {
       style: "mapbox://styles/mapbox/streets-v9",
       center: [viewport.longitude, viewport.latitude],
       zoom: viewport.zoom,
+      scrollZoom: false,
     });
 
     const bounds = new mapboxgl.LngLatBounds();

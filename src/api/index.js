@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const url = "https://fund-raiser-app.herokuapp.com/api/v1";
-const url = "http://localhost:3000/api/v1";
+const url = "https://fund-raiser-app.herokuapp.com/api/v1";
+// const url = "http://localhost:3000/api/v1";
 const users_url = `${url}/users`;
 const campaigns_url = `${url}/campaigns`;
 const favorites_url = `${url}/favorites`;

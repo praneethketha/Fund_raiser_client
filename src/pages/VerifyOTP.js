@@ -5,6 +5,7 @@ import * as api from "../api";
 import cookie from "react-cookies";
 
 const VerifyOTP = () => {
+  const [verifing, setVerifing] = useState(false);
   const [error, setError] = useState("");
   const { currentUser } = useSelector((state) => state.currentUser);
   const [credentials, setCredentials] = useState({
@@ -16,6 +17,7 @@ const VerifyOTP = () => {
 
   const verify = async (otpInfo) => {
     try {
+      setVerifing(true);
       setCredentials({ ...credentials, user_id: `${currentUser.userId}` });
       if (typeof credentials.user_id === "string" && credentials.user_id) {
         const { data } = await api.verifyOTP(otpInfo);
@@ -34,6 +36,7 @@ const VerifyOTP = () => {
     } catch (err) {
       setError(err.response.data.message);
     }
+    setVerifing(false);
   };
 
   const handleSubmit = (e) => {
@@ -77,7 +80,7 @@ const VerifyOTP = () => {
             style={{ width: "100%" }}
             onClick={handleSubmit}
           >
-            Log In
+            {verifing ? "Verifing..." : "Verify"}
           </button>
         </form>
       </section>

@@ -6,12 +6,13 @@ import { Link } from "react-router-dom";
 import * as api from "../api";
 import "./Signup.css";
 const Signup = () => {
+  const [signUp, setSignUp] = useState(false);
   const [error, setError] = useState({});
   const [user, setUser] = useState({
     name: "",
     email: "",
     password: "",
-    role: "",
+    role: "donar",
     passwordConfirm: "",
     address: "",
     contact_number: "",
@@ -21,6 +22,7 @@ const Signup = () => {
 
   const signup = async (newUser) => {
     try {
+      setSignUp(true);
       const { data } = await api.createUser(newUser);
       dispatch({ type: "CREATE_USER", payload: data.data });
       history.push("/verifyOTP");
@@ -28,9 +30,11 @@ const Signup = () => {
       console.log(err.response);
       setError(JSON.parse(err.response.data.message));
     }
+    setSignUp(false);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     signup(user);
   };
 
@@ -203,7 +207,7 @@ const Signup = () => {
           style={{ width: "50%" }}
           onClick={handleSubmit}
         >
-          sign up
+          {signUp ? "Sending OTP ..." : "sign up"}
         </button>
         <div className="signup_check">
           <Link className="forgot_password" to="/forgotPassword">

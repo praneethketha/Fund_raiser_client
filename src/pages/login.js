@@ -5,6 +5,7 @@ import * as api from "../api";
 import cookie from "react-cookies";
 
 const Login = () => {
+  const [login, setLogin] = useState(false);
   const [error, setError] = useState("");
   const [credentials, setCredentials] = useState({
     email: "",
@@ -15,6 +16,7 @@ const Login = () => {
 
   const logUser = async (credentials) => {
     try {
+      setLogin(true);
       const { data } = await api.logTheUser(credentials);
       cookie.save("token", data.token, {
         expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
@@ -30,6 +32,7 @@ const Login = () => {
     } catch (err) {
       setError(err.response.data.message);
     }
+    setLogin(false);
   };
 
   const handleSubmit = (e) => {
@@ -95,7 +98,7 @@ const Login = () => {
             style={{ width: "100%" }}
             onClick={handleSubmit}
           >
-            Log In
+            {login ? "Logging..." : "Log In"}
           </button>
           <p style={{ marginTop: "1rem" }}>
             Don't you have an account?{" "}
